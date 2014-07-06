@@ -1,4 +1,4 @@
-###Jekyll, Compass, [SIngularitygs](http://singularity.gs/) [SMACSS](smacss.com)
+###A starter theme directory for Jekyll which uses compass, singularitygs, and [SMACSS](smacss.com)
 ---
 ###Dependencies
 
