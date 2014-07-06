@@ -12,7 +12,7 @@
 * Open another terminal window
 * cd to your newsite
 * $ `git clone git@github.com:C13L0/_theme.git`
-* $ 'cd _theme'
+* $ `cd _theme`
 * $ `bundle install`
 * $ `compass watch`
 * In a text editor, open _includes/head.html and edit the href under <!-- Custom CSS --> to use styles.css
