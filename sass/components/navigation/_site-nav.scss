@@ -1,0 +1,64 @@
+.site-nav {
+  @include breakpoint(40em) {
+    text-align: right;
+    line-height: 50px;
+    border: none;
+    background: none;
+  }
+  .menu-icon {
+    @include breakpoint(40em) {
+      display: none;
+    }
+  }
+  .page-link {
+    @include breakpoint(40em) {
+      margin-left: 20px;
+      color: $med-grey;
+      letter-spacing: -.5px;
+      display: initial;
+    }
+  }
+}
+
+// Original Jekyll mobile nav
+@media screen and (max-width: 40em) {
+  .site-nav {
+    @include border-radius(5px);
+    position: fixed;
+    z-index: 10;
+    top: 14px;
+    right: 8px;
+    background-color: $white;
+    border: 1px solid $light-grey;
+    .menu-icon {
+      @include font-size(24px);
+      display: block;
+      color: $dark-grey;
+      float: right;
+      width: 36px;
+      text-align: center;
+      line-height: 36px;
+    }
+    .menu-icon svg {
+      width: 18px;
+      height: 16px;
+    }
+    .trigger {
+      clear: both;
+      margin-bottom: 5px;
+      display: none;
+    }
+    &:hover .trigger {
+      display: block;
+    }
+    .page-link {
+      display: block;
+      text-align: right;
+      line-height: 1.25;
+      padding: 5px 10px;
+      margin: 0;
+    }
+  }
+}
+
+

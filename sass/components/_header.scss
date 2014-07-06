@@ -1,0 +1,21 @@
+// Site header
+.site-header {
+  border-top: 5px solid $dark-grey;
+  border-bottom: 1px solid $light-grey;
+  min-height: 56px;
+}
+
+.site-title,
+.site-title:hover,
+.site-title:visited {
+  @include font-size(22px);
+  display: block;
+  color: $black;
+  letter-spacing: -1px;
+  line-height: 56px;
+  padding: 0 1em;
+  @include breakpoint(40em) {
+    @include font-size(26px);
+    padding: initial;
+  }
+}

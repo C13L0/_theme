@@ -1,0 +1,123 @@
+// Post home page
+.posts {
+  list-style-type: none;
+  padding-left: 0;
+  li {
+    margin-bottom: 30px;
+  }
+  .post-link {
+    @include font-size(24px);
+    letter-spacing: -1px;
+    line-height: 1;
+  }
+  .post-date {
+    @include font-size(15px);
+    display: block;
+    color: $med-grey;
+  }
+}
+
+// Post styles
+.post-header {
+  margin: 10px 0 30px;
+  h1 {
+    @include font-size(30px);
+    letter-spacing: -1.75px;
+    line-height: 1;
+    font-weight: $light;
+    @include breakpoint(40em) {
+      @include font-size(42px);
+    }
+  }
+  .meta {
+    @include font-size(15px);
+    color: $med-grey;
+    margin-top: 5px;
+  }
+}
+
+// Post content
+.post-content {
+  margin: 0 0 30px;
+  > * {
+    margin: 20px 0;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1;
+    font-weight: $light;
+    margin: 40px 0 20px;
+  }
+  h2 {
+    @include font-size(32px);
+    letter-spacing: -1.25px;
+    @include breakpoint(28em) {
+      @include font-size(42px);
+    }
+  }
+  h3 {
+    @include font-size(26px);
+    letter-spacing: -1px;
+    @include breakpoint(40em) {
+      @include font-size(22px);
+    }
+  }
+  h4 {
+    @include font-size(20px);
+    letter-spacing: -1px;
+    @include breakpoint(40em) {
+      @include font-size(18px);
+    }
+  }
+  blockquote {
+    @include font-size(18px);
+    border-left: 4px solid #e8e8e8;
+    padding-left: 20px;
+    opacity: .6;
+    letter-spacing: -1px;
+    font-style: italic;
+    margin: 30px 0;
+    @include breakpoint(40em) {
+      padding-left: 10px;
+    }
+  }
+  ul, ol {
+    padding-left: 20px;
+    @include breakpoint(40em) {
+      padding-left: 10px;
+    }
+  }
+}
+
+.post {
+  pre,
+  code {
+    @include font-size(15px);
+    @include border-radius(3px);
+    border: 1px solid $light-grey-blue;
+    background-color: $pale-blue;
+    padding: 8px 12px;
+    overflow:scroll;
+  }
+  code {
+    padding: 1px 5px;
+  }
+  ul, ol {
+    margin-left: 1.35em;
+  }
+  pre code {
+    border: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  // Terminal
+  pre.terminal {
+    @include border-radius(3px);
+    border: 1px solid $black;
+    background-color: $dark-grey;
+    color: $black;
+  }
+  pre.terminal code {
+    background-color: $dark-grey;
+  }
+}

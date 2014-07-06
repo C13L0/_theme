@@ -1,0 +1,94 @@
+// SASS Libraries
+@import "compass";
+@import "breakpoint";
+@import "singularitygs";
+@import "toolkit";
+
+// Globbing from within sub-folders only works with relative paths.
+@import "variables/grids";
+@import "variables/colors";
+@import "abstractions/mixins";
+
+// Uncomment to create toggle at left corner to see the grid
+//@include grid-overlay('body') {}
+
+body {
+  //@include background-grid; // Uncomment for grid
+  @include clearfix;
+  margin: 0 auto;
+}
+
+.site-header {
+  overflow: auto;
+}
+
+.site-title {
+  @include grid-span(3, 1, 4);
+  @include breakpoint(40em) {
+    @include grid-span(4, 2, 12);
+  }
+  @include breakpoint(69em) {
+    @include grid-span(4, 4, 16);
+  }
+}
+
+.site-nav {
+    @include breakpoint(40em) {
+    @include grid-span(6, 6, 12);
+  }
+  @include breakpoint(69em) {
+    @include grid-span(6, 8, 16);
+  }
+}
+
+.page-content {
+  overflow: auto;
+  .wrap {
+    @include breakpoint(40em) {
+      @include grid-span(10, 2, 12);
+    }
+    @include breakpoint(69em) {
+      @include grid-span(10, 4, 16);
+    }
+  }
+}
+
+.site-footer {
+  overflow: auto;
+  .wrap {
+    @include breakpoint(40em) {
+      @include grid-span(10, 2, 12);
+    }
+    @include breakpoint(69em) {
+      @include grid-span(10, 4, 16);
+    }
+  }
+}
+
+.footer-col-1 {
+  @include breakpoint(40em) {
+    @include grid-span(5, 1, 10);
+  }
+  @include breakpoint(69em) {
+    @include grid-span(3, 1, 10);
+  }
+}
+
+.footer-col-2 {
+  @include breakpoint(40em) {
+    @include grid-span(5, 6, 10);
+  }
+  @include breakpoint(69em) {
+    @include grid-span(3, 4, 10);
+  }
+}
+
+.footer-col-3 {
+  @include breakpoint(40em) {
+      @include grid-span(10, 1, 10);
+  }
+  @include breakpoint(69em) {
+    @include grid-span(4, 7, 10);
+  }
+}
+

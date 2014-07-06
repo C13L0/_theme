@@ -1,0 +1,25 @@
+// Use REMs with a pixel fallback for font sizing.
+// Example: @include font-size(12px);
+@mixin font-size($font-size) {
+  font-size: $font-size;
+  font-size: ($font-size / $base-font-size)*1rem;
+}
+
+// Hide text when using image sprite.
+// Example: @include hide-text-inline;
+@mixin hide-text-inline {
+  display: inline-block;
+  text-indent: -120%;
+  overflow: hidden;
+  text-align: left;
+  position: relative;
+}
+
+// Calc with fallback.
+// Example: @include calc(width, "25% - 1em");
+@mixin calc($property, $expression) {
+  #{$property}: -webkit-calc(#{$expression});
+  #{$property}: -moz-calc(#{$expression});
+  #{$property}: -o-calc(#{$expression});
+  #{$property}: calc(#{$expression});
+}

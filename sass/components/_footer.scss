@@ -1,0 +1,39 @@
+// Site Footer
+.site-footer {
+  padding: 1.875em 0;
+  border-top: 1px solid $light-grey;
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  li {
+    @include font-size(15px);
+    letter-spacing: -.3px;
+    color: $med-grey;
+  }
+  p {
+    @extend li;
+  }
+  .wrap {
+    padding: 0 1em;
+    @include breakpoint(40em) {
+      padding: initial;
+    }
+  }
+}
+
+.footer-heading {
+  @include font-size(18px);
+  font-weight: $light;
+  letter-spacing: -.5px;
+  margin-bottom: 15px;
+}
+
+.github-icon-svg,
+.twitter-icon-svg {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  top: 3px;
+}
