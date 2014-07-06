@@ -30,12 +30,15 @@
 </head>
 ```
 *  Navigate to css folder and delete main.css
+*  Refresh your browser
 
+###Set up completed
+If _theme set-up is successful, the site will still look like the original starter jekyll site. However, it will now be using sass/compass and singularity for grid layouts.
+
+
+###Trouble shooting
 >**Bundle install errors**
 If any errors are produced at $ bundle install, you are probably missing a gem on your local. The top few lines will usually tell you which ones. Do *not* install any gems using sudo or rvm will not be able to manage them.
 * $ `cd ~`
 * $ `gem install missing-gem`
 
-
-###Theme directory structure
-coming soon...
