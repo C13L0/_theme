@@ -15,7 +15,7 @@
 * $`bundle install`
 * $`compass watch`
 * Open _includes/head.html and edit to use styles.css
-* Open _layouts/default.html. Add under <!DOCTYPE html>
+* Open _layouts/default.html. Add the following code under <!DOCTYPE html>
 
 ```
 <head>
