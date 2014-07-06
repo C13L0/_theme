@@ -5,8 +5,7 @@
 * [RVM](https://rvm.io/)
 * [Jekyll](http://jekyllrb.com/docs/installation/)
 
-###Instructions
-
+###Installation
 * $`jekyll new sitename`
 * cd to your newsite
 * $`jekyll serve --watch`
@@ -33,12 +32,12 @@
 *  Refresh your browser
 
 ###Set up completed
-If _theme set-up is successful, the site will still look like the original starter jekyll site. However, it will now be using sass/compass and singularity for grid layouts.
+If _theme set-up is successful, the site will still look like the original starter jekyll site. Your new site will now be using sass/compass, singularity for grid layouts, and breakpoint for media-queries.
 
 
 ###Trouble shooting
 >**Bundle install errors**
-If any errors are produced at $ bundle install, you are probably missing a gem on your local. The top few lines will usually tell you which ones. Do *not* install any gems using sudo or rvm will not be able to manage them.
+If any errors are produced at $ bundle install, you are probably missing a gem on your local. The top few lines will usually tell you which ones. Do *not* install any gems using sudo because rvm will not be able to manage them.
 * $ `cd ~`
 * $ `gem install missing-gem`
 
