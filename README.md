@@ -6,15 +6,15 @@
 * [Jekyll](http://jekyllrb.com/docs/installation/)
 
 ###Installation
-* $`jekyll new sitename`
+* $ `jekyll new sitename`
 * cd to your newsite
-* $`jekyll serve --watch`
+* $ `jekyll serve --watch`
 * Open another terminal window
 * cd to your newsite
 * $ `git clone git@github.com:C13L0/_theme.git`
-* cd into _theme
-* $`bundle install`
-* $`compass watch`
+* $ 'cd _theme'
+* $ `bundle install`
+* $ `compass watch`
 * In a text editor, open _includes/head.html and edit the href under <!-- Custom CSS --> to use styles.css
 ```
 <!-- Custom CSS -->
