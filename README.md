@@ -10,8 +10,9 @@
 * $`jekyll new sitename`
 * cd to your newsite
 * $`jekyll serve --watch`
-* cd to the root of your site and `git clone git@github.com:C13L0/_theme.git`
 * Open another terminal window
+* cd to your newsite
+* `git clone git@github.com:C13L0/_theme.git`
 * cd into _theme
 * $`bundle install`
 * $`compass watch`
