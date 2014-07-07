@@ -40,7 +40,7 @@
 If _theme set-up is successful, the site will still look like the original starter jekyll site. Your new site will now be using sass/compass, singularity for grid layouts, and breakpoint for media-queries.
 
 ###Daily usage
-Theming changes will never be done in the site root css directory. When making css changes you will need to work in the _theme directory and use compass to compile.
+All css changes should be made in  _theme directory and use compass to compile. *Warning! Any change made directly to the root css directory will be overwritten on compile.*
 *  Cd to yoursite/_theme
 *  $ ```compass watch```
 
