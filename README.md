@@ -15,19 +15,24 @@
 * $ `cd _theme`
 * $ `bundle install`
 * $ `compass watch`
-* In a text editor, open _includes/head.html and edit the href under <!-- Custom CSS --> to use styles.css
+* In a text editor, open _includes/head.html and delete both ```<head>``` and ```</head``` tags. Also delete the following: 
 ```
-<!-- Custom CSS -->
-    <link rel="stylesheet" href="{{ "/css/styles.css" | prepend: site.baseurl }}">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
 ```
-*  In a text editor, open _layouts/default.html. Add the following code under <!DOCTYPE html>
+
+*  In a text editor, open _layouts/default.html. Paste the following code between the ```<html>``` and ```<body>``` tags
 
 ```
-<head>
-    <!-- Custom default layout CSS -->
-    <link rel="stylesheet" href="{{ "/css/layouts/default.layout.css" | prepend: site.baseurl }}">
-</head>
+    <head>
+      {% include head.html %}
+      <!-- Custom CSS -->
+      <link rel="stylesheet" href="{{ "/css/styles.css" | prepend: site.baseurl }}">
+      <!-- Custom default layout CSS -->
+      <link rel="stylesheet" href="{{ "/css/layouts/default.layout.css" | prepend: site.baseurl }}">
+    </head>
 ```
+*  Make sure ```compass watch``` is running
 *  Navigate to css folder and delete main.css
 *  Refresh your browser
 
